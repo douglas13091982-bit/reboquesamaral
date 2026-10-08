@@ -94,16 +94,10 @@
     .section-head h2{max-width:660px;margin-top:18px;color:var(--navy)}
     .section-head>p{max-width:280px;font-size:14px;color:var(--muted)}
     .product-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
-    .product{background:var(--white);border:1px solid var(--line);overflow:hidden;display:flex;flex-direction:column;transition:border-color .25s,box-shadow .25s}
-    .product:hover{border-color:var(--royal);box-shadow:0 18px 40px rgba(10,27,63,.12)}
-    .product img{width:100%;height:360px;object-fit:contain;background:var(--tile);transition:transform .6s var(--ease)}
-    .product:hover img{transform:scale(1.025)}
-    .product-info{padding:22px 24px 24px;display:flex;justify-content:space-between;align-items:end;gap:14px;flex:1;border-top:4px solid var(--navy);transition:border-color .25s}
-    .product:hover .product-info{border-top-color:var(--royal)}
-    .product h3{font-size:26px;color:var(--navy)}
-    .product p{font-size:14px;color:var(--muted);margin-top:8px}
-    .product-arrow{width:38px;height:38px;border:1px solid var(--navy);color:var(--navy);display:grid;place-items:center;font-size:18px;flex:none;transition:background .2s,color .2s,border-color .2s}
-    .product:hover .product-arrow{background:var(--royal);color:#fff;border-color:var(--royal)}
+    .product{position:relative;overflow:hidden;aspect-ratio:16/9;background:var(--navy);border:1px solid var(--line);transition:border-color .25s,box-shadow .25s}
+    .product:hover{border-color:var(--royal);box-shadow:0 18px 40px rgba(10,27,63,.18)}
+    .product img{width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease)}
+    .product:hover img{transform:scale(1.03)}
 
     .feature{background:var(--black);color:#fff;padding:0}
     .feature-grid{display:grid;grid-template-columns:1fr 1fr;min-height:580px}
@@ -171,7 +165,7 @@
       .ticker .wrap span+span{margin-left:28px}
       section{padding:78px 0}
       .section-head{display:block}.section-head>p{margin-top:18px}
-      .product-grid{grid-template-columns:1fr}.product img{height:250px}
+      .product-grid{grid-template-columns:1fr}
       .feature-grid{display:block}.feature-photo{min-height:330px}
       .feature-copy{padding:65px 16px 70px}.feature-list{gap:18px}
       .steps{grid-template-columns:1fr}
@@ -219,10 +213,10 @@
     <section class="products" id="modelos"><div class="wrap">
       <div class="section-head reveal"><div><div class="eyebrow">Linha Amaral</div><h2 class="display">Um modelo para cada missão.</h2></div><p>Reboques para carga, transporte e lazer — incluindo carretas sob medida para todos os tipos de barco.</p></div>
       <div class="product-grid">
-        <article class="product reveal"><img src="assets/reboque-utilitario.jpg" alt="Reboque utilitário com grade e piso de madeira"><div class="product-info"><div><h3 class="display">Utilitário</h3><p>Versátil para cargas e trabalho diário.</p></div><span class="product-arrow">↗</span></div></article>
-        <article class="product reveal"><img src="assets/reboque-bau.jpg" alt="Reboque baú fechado branco e grafite"><div class="product-info"><div><h3 class="display">Baú</h3><p>Proteção para a sua carga.</p></div><span class="product-arrow">↗</span></div></article>
-        <article class="product reveal"><img src="assets/reboque-nautico.jpg" alt="Reboque náutico galvanizado com barco"><div class="product-info"><div><h3 class="display">Náutico</h3><p>Carretas sob medida para barcos.</p></div><span class="product-arrow">↗</span></div></article>
-        <article class="product reveal"><img src="assets/reboque-plataforma.jpg" alt="Reboque plataforma reforçado em pátio industrial"><div class="product-info"><div><h3 class="display">Plataforma</h3><p>Robustez para cargas maiores.</p></div><span class="product-arrow">↗</span></div></article>
+        <figure class="product reveal"><img src="assets/reboque-utilitario-madeira.jpg" alt="Reboque utilitário com laterais de madeira em frente à fachada da Reboques Amaral" width="1280" height="720" loading="lazy"></figure>
+        <figure class="product reveal"><img src="assets/reboque-nautico-amarelo.jpg" alt="Reboque náutico amarelo com guincho e apoios para o casco" width="1280" height="720" loading="lazy"></figure>
+        <figure class="product reveal"><img src="assets/reboque-utilitario-lateral.jpg" alt="Reboque utilitário com estrutura de alumínio e laterais de madeira, visto de lado" width="1280" height="720" loading="lazy"></figure>
+        <figure class="product reveal"><img src="assets/reboque-aco-piso-xadrez.jpg" alt="Reboque de aço com piso xadrez e rampas, visto de cima" width="1280" height="720" loading="lazy"></figure>
       </div>
     </div></section>
 
