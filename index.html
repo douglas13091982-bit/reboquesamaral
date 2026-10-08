@@ -49,6 +49,8 @@
     .nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:28px;position:relative}
     .brand{display:flex;align-items:center;gap:12px;font-family:var(--display);font-stretch:108%;font-weight:800;font-size:15px;letter-spacing:.05em;color:var(--navy)}
     .brand small{display:block;font:700 9px/1 var(--mono);color:var(--royal);letter-spacing:.2em;margin-top:5px;text-transform:uppercase}
+    .brand-logo{height:46px;width:auto;display:block}
+    footer .brand-logo{height:56px}
     .navlinks{display:flex;gap:30px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.1em}
     .navlinks a{position:relative;padding:8px 0}
     .navlinks a:after{content:"";position:absolute;left:0;right:100%;bottom:2px;height:3px;background:var(--royal);transition:right .25s}
@@ -161,7 +163,7 @@
       .hero .wrap{width:calc(100% - 32px);padding:56px 0 80px}
       .topline .wrap{justify-content:center;text-align:center}.topline span:last-child{display:none}
       .nav{height:68px}.navlinks{top:68px;left:-16px;right:-16px;padding:16px}
-      .brand{font-size:13px}.brand small{display:none}.nav-cta{padding:11px 14px;font-size:10px}
+      .nav{gap:10px}.hide-sm{display:none}.brand{flex:0 1 172px;min-width:0}.brand-logo,footer .brand-logo{width:100%;height:auto}footer .brand{flex:none;max-width:200px}.nav-cta{padding:11px 14px;font-size:10px;white-space:nowrap}
       .hero-lead{font-size:15px}
       .hero-photo .plate--lg{left:-8px;bottom:-24px}
       .plate--lg b{font-size:26px;padding:8px 14px 6px}
@@ -187,9 +189,9 @@
 <body>
   <div class="topline"><div class="wrap"><span>Joinville · Santa Catarina</span><span>Construído para durar. Pronto para trabalhar.</span></div></div>
   <header><div class="wrap nav">
-    <a class="brand" href="#inicio" aria-label="Reboques Amaral, início"><span class="plate" aria-hidden="true"><i>BRASIL</i><b>RA</b></span><span>REBOQUES AMARAL<small>engenharia para levar</small></span></a>
+    <a class="brand" href="#inicio" aria-label="Reboques Amaral, início"><img class="brand-logo" src="assets/logo-reboques-amaral.png" alt="Reboques Amaral" width="640" height="118"></a>
     <nav class="navlinks" id="navlinks" aria-label="Navegação principal"><a href="#empresa">A empresa</a><a href="#modelos">Modelos</a><a href="#processo">Nosso jeito</a><a href="#contato">Contato</a></nav>
-    <a class="nav-cta" href="https://wa.me/554734370664?text=Ol%C3%A1%2C%20quero%20um%20or%C3%A7amento%20de%20reboque" target="_blank" rel="noopener">Pedir orçamento ↗</a>
+    <a class="nav-cta" href="https://wa.me/554734370664?text=Ol%C3%A1%2C%20quero%20um%20or%C3%A7amento%20de%20reboque" target="_blank" rel="noopener"><span class="hide-sm">Pedir </span>orçamento ↗</a>
     <button class="menu" id="menu" aria-label="Abrir menu" aria-expanded="false" aria-controls="navlinks">☰</button>
   </div></header>
 
@@ -252,7 +254,7 @@
   </main>
 
   <footer><div class="wrap footer-grid">
-    <div class="footer-brand"><a class="brand" href="#inicio"><span class="plate" aria-hidden="true"><i>BRASIL</i><b>RA</b></span><span>REBOQUES AMARAL<small>engenharia para levar</small></span></a><p>Reboques resistentes e seguros para quem não pode parar.</p></div>
+    <div class="footer-brand"><a class="brand" href="#inicio" aria-label="Reboques Amaral, início"><img class="brand-logo" src="assets/logo-reboques-amaral.png" alt="Reboques Amaral" width="640" height="118" loading="lazy"></a><p>Reboques resistentes e seguros para quem não pode parar.</p></div>
     <div><h4>Explorar</h4><a href="#empresa">A empresa</a><a href="#modelos">Modelos</a><a href="#processo">Nosso jeito</a></div>
     <div><h4>Fale conosco</h4><a href="tel:+554734370664">(47) 3437-0664</a><a href="https://wa.me/554734370664" target="_blank" rel="noopener">WhatsApp</a></div>
     <div><h4>Onde estamos</h4><p>R. Piratuba, 265<br>Saguaçu<br>Joinville · SC<br>89227-075</p></div>
